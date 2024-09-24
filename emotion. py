@@ -1,0 +1,112 @@
+print("Welcome to the Emotion Detection Program!")
+
+emotion = ""
+thoughts = ""
+energy = ""
+
+print("\n1. How are you feeling emotionally right now?")
+print("1. Happy and excited.")
+print("2. Neutral, neither happy nor sad.")
+print("3. Sad or upset.")
+
+response = input("Choose 1, 2, or 3: ")
+if response == "1":
+    emotion = "Happy and Excited"
+elif response == "2":
+    emotion = "Neutral"
+elif response == "3":
+    emotion = "Sad or Upset"
+else:
+    emotion = "Unknown"
+
+print("\n2. What type of thoughts are you having most often?")
+print("1. Positive and hopeful thoughts.")
+print("2. Neutral thoughts, just going through the day.")
+print("3. Negative or worrying thoughts.")
+
+response = input("Choose 1, 2, or 3: ")
+if response == "1":
+    thoughts = "Positive and Hopeful"
+elif response == "2":
+    thoughts = "Neutral"
+elif response == "3":
+    thoughts = "Negative or Worrying"
+else:
+    thoughts = "Unknown"
+
+print("\n3. How energetic do you feel right now?")
+print("1. I feel very energetic and motivated.")
+print("2. I feel okay, not too tired or energetic.")
+print("3. I feel low on energy and unmotivated.")
+
+response = input("Choose 1, 2, or 3: ")
+if response == "1":
+    energy = "High Energy"
+elif response == "2":
+    energy = "Moderate Energy"
+elif response == "3":
+    energy = "Low Energy"
+else:
+    energy = "Unknown"
+
+print("\n4. How well are you able to focus?")
+print("1. I am highly focused and productive.")
+print("2. I can focus, but my mind wanders sometimes.")
+print("3. I find it hard to concentrate right now.")
+
+response = input("Choose 1, 2, or 3: ")
+if response == "1":
+    energy = "High Energy"
+elif response == "2":
+    energy = "Moderate Energy"
+elif response == "3":
+    energy = "Low Energy"
+else:
+    energy = "Unknown"
+
+print("\n5. How is your overall mood over the past few days?")
+print("1. I've been in a good mood most of the time.")
+print("2. My mood has been okay, but with some ups and downs.")
+print("3. I've been in a bad mood frequently.")
+
+response = input("Choose 1, 2, or 3: ")
+if response == "1":
+    energy = "High Energy"
+elif response == "2":
+    energy = "Moderate Energy"
+elif response == "3":
+    energy = "Low Energy"
+else:
+    energy = "Unknown"
+
+print("\n--- Emotion Detection Results ---")
+print(f"Current emotional state: {emotion}")
+print(f"Thought patterns: {thoughts}")
+print(f"Energy level: {energy}")
+print(f"Focus ability: {energy}")
+print(f"Overall mood: {energy}")
+
+print("\n--- Suggestions Based on Your Responses ---")
+
+if emotion == "Sad or Upset":
+    print("- Try to talk to someone close or do something that makes you feel better.")
+    print("- Take time to relax and care for yourself emotionally.")
+
+if thoughts == "Negative or Worrying":
+    print("- Focus on shifting negative thoughts by practicing positive thinking or mindfulness.")
+    print("- Engage in activities that bring joy or distraction.")
+
+if energy == "Low Energy":
+    print("- Make sure you're getting enough rest and taking breaks when needed.")
+    print("- Try simple physical activities or hobbies to boost your energy and motivation.")
+
+if energy == "Moderate Energy":
+    print("- Keep balancing rest and productivity to maintain steady energy.")
+    print("- Avoid overworking yourself and take time for enjoyable activities.")
+
+if energy == "High Energy":
+    print("- Keep up your high energy by staying active and focused.")
+    print("- Use this momentum to achieve your goals, but don't forget to rest occasionally.")
+
+if energy == "Unknown":
+    print("- Make sure you choose valid options for accurate suggestions.")
